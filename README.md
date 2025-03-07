@@ -109,7 +109,7 @@ The **GF-07** device uses SMS for communication, which incurs the following cost
 **Example Cost Breakdown:**
 
 - If the cost per SMS is $0.05:
-  - `(0.05 x 1440) x 2 = $144 per device per day`
+  - `(4 x 1440) x 2 = NGN11,520 per device per day`
   
 The main cost here is the **SMS and airtime** for both sending location updates and receiving tracking data.
 
@@ -148,9 +148,9 @@ Since the device uses internet-based communication, the primary cost here is the
 | Feature             | GF-07 (SMS)                                 | GF-09 (GPRS/Internet)                       |
 |---------------------|---------------------------------------------|---------------------------------------------|
 | **Communication**    | SMS (every 1 minute)                       | GPRS (internet access)                     |
-| **Cost**             | SMS and airtime cost                        | Internet access for both device and server |
+| **Cost**             | Airtime cost                        | Internet access for both device and server |
 | **Real-Time**        | Delayed (based on SMS delivery)            | Real-time updates (via WebSocket/GPRS)     |
-| **Setup**            | Requires SMS-enabled SIM cards             | Requires internet/Wi-Fi connection         |
+| **Setup**            | Requires SMS-enabled SIM cards             | Requires Internet access SIM cards       |
 
 - **GF-07** incurs a higher cost due to SMS usage, but works on a basic mobile network.
 - **GF-09** is more efficient and cost-effective for long-term use, utilizing GPRS and internet access.
