@@ -136,7 +136,7 @@ GF-09 is a more advanced GPS tracker that supports **GPRS** communication, reduc
 
 The **GF-09** device uses **GPRS** communication, which incurs the following costs:
 
-- **Internet Access**: The cost of the internet connection for both the device and the server.
+- **Internet Access**: The cost of the internet connection for sending data to the server.
 - **Tracking Device Connection**: The device will connect to the company’s Wi-Fi, reducing the need for a mobile network.
 
 Since the device uses internet-based communication, the primary cost here is the **internet access** for the device and the server, significantly reducing the cost of SMS (compared to GF-07).
