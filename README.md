@@ -66,15 +66,14 @@
 
 
 
-
-# Development Using GF-07/GF-09
+# Development Using GF-07/GF-09/TK103B
 
 ## Overview
 
-This system involves two types of GPS tracking devices: **GF-07** and **GF-09**. Both devices will transmit location data to a server, where the data will be stored and processed. The system also includes a **frontend dashboard** for real-time tracking of the devices.
+This system involves three types of GPS tracking devices: **GF-07**, **GF-09**, and **TK103B**. Each device will transmit location data to a server, where the data will be stored and processed. The system also includes a **frontend dashboard** for real-time tracking of the devices.
 
 ### Key Components
-1. **Mobile Device** - Sends location data via SMS (GF-07).
+1. **Mobile Device** - Sends location data via SMS (GF-07) or GPRS (GF-09/TK103B).
 2. **Server (Database)** - Receives and stores the location data.
 3. **Frontend Dashboard** - Displays location data in real-time.
 
@@ -82,12 +81,12 @@ This system involves two types of GPS tracking devices: **GF-07** and **GF-09**.
 
 ## GF-07 Device
 
-GF-07 is a GPS tracker that communicates using **SMS**. The mobile device will send location data at regular intervals (every 1 minute) via SMS to a server, which will then process and store the received data.
+GF-07 is a GPS tracker that communicates using **SMS**. The mobile device sends location data at regular intervals (every 1 minute) via SMS to a server, which then processes and stores the received data.
 
 ### Development Breakdown
 
 1. **Mobile Device**  
-   - The mobile device will send an SMS every 1 minute, containing the GPS location of the device.
+   - The mobile device sends an SMS every 1 minute, containing the GPS location of the device.
    - The system is responsible for sending the SMS and ensuring it is delivered.
 
 2. **Server (Database)**  
@@ -143,17 +142,45 @@ Since the device uses internet-based communication, the primary cost here is the
 
 ---
 
+## TK103B Device
+
+The **TK103B** is another GPS tracker with **GPRS** functionality, similar to the **GF-09**, but with some added features like **SOS panic button**, **voice monitoring**, and **geofence capabilities**. It can also communicate over **SMS** for backup in case GPRS is unavailable.
+
+### Development Breakdown
+
+1. **Mobile Device**  
+   - The device can operate over **GPRS**, but can also fall back to SMS if the internet connection is unstable or unavailable.
+   - Features like **SOS button** and **voice monitoring** add extra functionalities that the system should be prepared to handle.
+
+2. **Server (Database)**  
+   - The server will receive location data via GPRS or SMS, depending on network availability.
+   - The system should also handle special messages from the device like **SOS alerts** and **geofence breach notifications**.
+
+3. **Frontend Dashboard**  
+   - The dashboard will handle real-time updates from GPRS communication but also be able to display emergency notifications like **SOS alerts** and **geofence breaches**.
+
+### Cost Analysis
+
+The **TK103B** device offers a similar cost structure to **GF-09**, as it uses **GPRS** for communication. However, if it falls back to **SMS** (e.g., in areas without internet access), the costs will be similar to the **GF-07**.
+
+- **Cost per SMS**: (if used for fallback communication)
+- **Internet Access**: (for GPRS communication)
+- **Special Feature Costs**: Monitoring services like **voice calls** or **SOS alerts** may have additional costs associated with them.
+
+---
+
 ## Summary
 
-| Feature             | GF-07 (SMS)                                 | GF-09 (GPRS/Internet)                       |
-|---------------------|---------------------------------------------|---------------------------------------------|
-| **Communication**    | SMS (every 1 minute)                       | GPRS (internet access)                     |
-| **Cost**             | Airtime cost                        | Internet access for both device and server |
-| **Real-Time**        | Delayed (based on SMS delivery)            | Real-time updates (via WebSocket/GPRS)     |
-| **Setup**            | Requires SMS-enabled SIM cards             | Requires Internet access SIM cards       |
+| Feature             | GF-07 (SMS)                               | GF-09 (GPRS/Internet)                       | TK103B (GPRS + SMS Fallback)                |
+|---------------------|-------------------------------------------|---------------------------------------------|---------------------------------------------|
+| **Communication**    | SMS (every 1 minute)                     | GPRS (internet access)                     | GPRS (internet) + SMS (fallback)           |
+| **Cost**             | Airtime cost                              | Internet access for both device and server | Internet access + SMS costs (if fallback)  |
+| **Real-Time**        | Delayed (based on SMS delivery)          | Real-time updates (via WebSocket/GPRS)      | Real-time updates (via GPRS, SMS as fallback)|
+| **Setup**            | Requires SMS-enabled SIM cards           | Requires Internet access SIM cards         | Requires Internet access or fallback to SMS|
+| **Special Features** | Basic tracking                           | Advanced GPRS communication                | SOS button, voice monitoring, geofence     |
 
-- **GF-07** incurs a higher cost due to SMS usage, but works on a basic mobile network.
-- **GF-09** is more efficient and cost-effective for long-term use, utilizing GPRS and internet access.
+- **GF-07** incurs higher costs due to SMS usage, but works on a basic mobile network.
+- **GF-09** and **TK103B** are more efficient and cost-effective for long-term use, utilizing GPRS and internet access. **TK103B** has the added benefit of **SMS fallback** and extra features like **SOS alerts** and **geofencing**.
 
 ---
 
@@ -161,10 +188,12 @@ Since the device uses internet-based communication, the primary cost here is the
 
 - **GF-07**: Focus on SMS handling, ensuring proper delivery and parsing of location data.
 - **GF-09**: Implement GPRS communication with WebSocket support for real-time data transmission.
-- **Frontend Dashboard**: Implement a real-time map interface to visualize the location data from both devices.
+- **TK103B**: Implement GPRS communication with fallback to SMS and integrate special features like **SOS alerts** and **geofencing**.
+- **Frontend Dashboard**: Implement a real-time map interface to visualize the location data from all devices and integrate notifications for SOS and geofence breaches.
 
 ---
 
 ## Conclusion
 
-Both the **GF-07** and **GF-09** have their own use cases and advantages. **GF-07** is ideal for basic tracking with SMS communication, while **GF-09** is more advanced and cost-efficient, utilizing GPRS for real-time updates.
+The **GF-07** is ideal for basic tracking with SMS communication, the **GF-09** is more advanced and cost-efficient using GPRS for real-time updates, and the **TK103B** combines GPRS with SMS fallback and added features like **SOS alerts** and **geofencing**, making it versatile for various use cases.
+
