@@ -9,7 +9,7 @@
 | **Feature**                        | **GF-07**                             | **GF-09**                             | **TK103B**                                  |
 |------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------------|
 | **Tracking Method**                | Real-time tracking via SMS           | Real-time tracking via SMS and GPRS  | Real-time tracking via GPRS                |
-| **Battery Life**                   | 4 hours (short)                       | 48 hours (longer than GF-07)          | 2-3 days (depends on usage and settings)   |
+| **Battery Life**                   |  depends on usage and settings       |    depends on usage and settings     | depends on usage and settings   |
 | **Power Source**                   | Internal rechargeable battery         | Internal rechargeable battery         | Internal rechargeable battery or vehicle's power |
 | **Communication**                  | SMS only                              | SMS, GPRS                            | SMS, GPRS                                  |
 | **Geofencing**                     | No                                    | Yes                                   | Yes (with notifications)                   |
@@ -20,7 +20,7 @@
 | **Mobile App**                     | No (we build)                                    | No (we build)                                    | No (we build)   |
 | **Installation Type**              | Plug and play, self-installed         | Plug and play, self-installed         | Plug and play, self-installed              |
 | **Tracking Frequency**             | Typically slower due to SMS delays   | Faster updates (GPRS-based)          | Frequent real-time updates (depending on settings) |
-| **Cost**                           | $4-$8                                  | $8-13                                 | $25-$35                                     |
+| **Cost**                           | $4-$8                                  | $8-13                                 | $18-$35                                     |
 | **Waterproof**                     | No                                    | No                                    | Yes (IP65-rated)                           |
 
 ## Key Differences:
@@ -59,7 +59,7 @@
 
 | **Suggestion**                   | **Details**                                                                                                                                     |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Mixed System for Vehicles**    | - Use the driver's application for regular vehicles. <br> - Use GF-07 for long-distance/night vehicles and cars to ensure tracking during off-hours.     |
+| **Mixed System for Vehicles**    | - Use the driver's application for regular vehicles. <br> - Use GF-07/GF-09 for long-distance/night vehicles and cars to ensure tracking during off-hours.     |
 | **Custom Battery for GF-07/GF-09**     | - Design a custom battery to extend usage.                |
 | **Ensure Sufficient Airtime**    | - Ensure that GF-07/GF-09 has enough SMS airtime to maintain communication.                                                                           |
 | **Development Approach**         | - Start by developing and testing the driver's application. <br> - Once successful, proceed with implementing the GF-07/GF-09 for other vehicles.     |
@@ -80,7 +80,7 @@ This system involves three types of GPS tracking devices: **GF-07**, **GF-09**, 
 ---
 
 ## GF-07 Device
-
+https://www.alibaba.com/product-detail/2024-Hot-Selling-GF-07-Tracker_1601075883238.html
 GF-07 is a GPS tracker that communicates using **SMS**. The mobile device sends location data at regular intervals (every 1 minute) via SMS to a server, which then processes and stores the received data.
 
 ### Development Breakdown
@@ -115,7 +115,7 @@ The main cost here is the **SMS and airtime** for both sending location updates 
 ---
 
 ## GF-09 Device
-
+https://www.alibaba.com/product-detail/GF-09-Mini-Car-Pet-Tracking_1601286615165.html
 GF-09 is a more advanced GPS tracker that supports **GPRS** communication, reducing the need for SMS. This device can send data over a network, using the internet for communication instead of relying on SMS.
 
 ### Development Breakdown
@@ -143,7 +143,7 @@ Since the device uses internet-based communication, the primary cost here is the
 ---
 
 ## TK103B Device
-
+https://www.alibaba.com/product-detail/TK103-Vehicle-GPS-Tracking-System-Real_62206821769.html
 The **TK103B** is another GPS tracker with **GPRS** functionality, similar to the **GF-09**, but with some added features like **SOS panic button**, **voice monitoring**, and **geofence capabilities**. It can also communicate over **SMS** for backup in case GPRS is unavailable.
 
 ### Development Breakdown
