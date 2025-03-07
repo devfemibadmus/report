@@ -80,7 +80,7 @@ This system involves three types of GPS tracking devices: **GF-07**, **GF-09**, 
 ---
 
 ## GF-07 Device
-https://www.alibaba.com/product-detail/2024-Hot-Selling-GF-07-Tracker_1601075883238.html
+[https://www.alibaba.com/product-detail/2024-Hot-Selling-GF-07-Tracker_1601075883238.html](https://www.alibaba.com/product-detail/2024-Hot-Selling-GF-07-Tracker_1601075883238.html)
 GF-07 is a GPS tracker that communicates using **SMS**. The mobile device sends location data at regular intervals (every 1 minute) via SMS to a server, which then processes and stores the received data.
 
 ### Development Breakdown
@@ -115,7 +115,7 @@ The main cost here is the **SMS and airtime** for both sending location updates 
 ---
 
 ## GF-09 Device
-https://www.alibaba.com/product-detail/GF-09-Mini-Car-Pet-Tracking_1601286615165.html
+[https://www.alibaba.com/product-detail/GF-09-Mini-Car-Pet-Tracking_1601286615165.html](https://www.alibaba.com/product-detail/GF-09-Mini-Car-Pet-Tracking_1601286615165.html)
 GF-09 is a more advanced GPS tracker that supports **GPRS** communication, reducing the need for SMS. This device can send data over a network, using the internet for communication instead of relying on SMS.
 
 ### Development Breakdown
@@ -143,7 +143,7 @@ Since the device uses internet-based communication, the primary cost here is the
 ---
 
 ## TK103B Device
-https://www.alibaba.com/product-detail/TK103-Vehicle-GPS-Tracking-System-Real_62206821769.html
+[https://www.alibaba.com/product-detail/TK103-Vehicle-GPS-Tracking-System-Real_62206821769.html](https://www.alibaba.com/product-detail/TK103-Vehicle-GPS-Tracking-System-Real_62206821769.html)
 The **TK103B** is another GPS tracker with **GPRS** functionality, similar to the **GF-09**, but with some added features like **SOS panic button**, **voice monitoring**, and **geofence capabilities**. It can also communicate over **SMS** for backup in case GPRS is unavailable.
 
 ### Development Breakdown
