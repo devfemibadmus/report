@@ -4,4 +4,5 @@
 - [loyalty.md](loyalty.md)
 - [rfid.md](rfid.md)
 - [vehicle.md](vehicle.md)
+- [airdrop.md](airdrop.md)
 
