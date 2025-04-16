@@ -26,6 +26,12 @@ Revenue generated from **limited advertisements** featuring **Tolaram-owned bran
 -   💼 **Strengthens brand loyalty across Tolaram's product range**
 -   📢 **Promotes Tolaram brands through targeted advertising**
 
+## **Built-In Advertising and Market Potential** 📢
+
+With over **30 million Nigerians** already participating in airdrop programs, Tolaram Airdrop has access to a massive audience primed for engagement. The app isn't just a rewards platform—it's a built-in **advertisement engine** that encourages users to buy more products like Indomie to earn tokens. As consumers participate in mining for tokens, they will naturally be incentivized to purchase more, driving sales through product engagement.
+
+The Tolaram portfolio is diverse and includes widely recognized brands with a strong fan base. Fans of these brands will continually promote products such as Indomie, creating a viral loop where the **product becomes the incentive for mining**. This creates a sustainable marketing channel where each purchase is both a reward for users and an advertising opportunity for Tolaram, ensuring long-term engagement and increased product visibility.
+
 ## **Business Impact and Scope** 📊
 
 ### **Business Impact:**
