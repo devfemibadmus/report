@@ -2,29 +2,10 @@
 
 **Tolaram Airdrop** is a mobile application that enables users to earn tokens by scanning QR codes or barcodes on products from Tolaram's portfolio, including Indomie, Dano, Lush, Addme, and more. The number of tokens earned depends on the product type and size, motivating users to scan more products for greater rewards.
 
-## **How It Works** 🎮
-
-1.  **Download the App**
-2.  **Sign Up or Log In**
-3.  **Scan the QR or Barcode on a Tolaram Product Pack**
-4.  **Earn Tokens Instantly**
-5.  **Track Tokens in Your Wallet**
-6.  **Redeem Tokens or Save for Later**
 
 ## **Token Funding Model** 💰
 
 Revenue generated from **limited advertisements** featuring **Tolaram-owned brands** (such as Indomie, Dano, Lush, Addme, and others) will fund the tokens distributed to users. This ensures a sustainable reward system while promoting the diverse range of Tolaram’s products.
-
-## **Key Benefits** ✅
-
--   🎁 **Earn tokens with every product scan**
--   🔒 **Unique QR/barcode for each scan, ensuring one-time use**
--   📦 **More scans result in more tokens**
--   📊 **Track and manage your rewards in real-time**
--   🏆 **Compete on leaderboards, participate in monthly challenges, and earn exclusive rewards**
--   📱 **Mobile-first, user-friendly interface**
--   💼 **Strengthens brand loyalty across Tolaram's product range**
--   📢 **Promotes Tolaram brands through targeted advertising**
 
 ## **Built-In Advertising and Market Potential** 📢
 
